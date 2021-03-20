@@ -5,28 +5,23 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.getQiitaPosts = this.getQiitaPosts.bind(this);
-
     this.state = {
-      query: 'React', // 検索したいワード
-      keyword: '',
+      keyword: '', // 検索したいワード
     };
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.getQiitaPosts = this.getQiitaPosts.bind(this);
   }
 
   handleChange(event) {
     this.setState( {keyword: event.target.value} );
-    console.log("state.keyword" + this.state.keyword)
+    console.log("state.keyword : " + this.state.keyword)
   }
 
-  handleSubmit(event) {
-    alert('検索キーワードが送信されました:' + this.state.keyword);
+  getQiitaPosts(event) {
+    // alert('検索キーワードを受け取りました。検索します。')
     event.preventDefault();
-  }
 
-  getQiitaPosts() {
     console.log(this.state.keyword)
     axios.get('https://qiita.com/api/v2/items', {
         params: {
@@ -54,12 +49,12 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="app-title">Qiita API Service</h1>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.getQiitaPosts}>
           <label>
             検索キーワード
             <input type="text" name="検索キーワード" value={this.state.value} onChange={this.handleChange} />
           </label>
-          <input type="submit" value="検索" onClick={() => this.getQiitaPosts()} /> 
+          <input type="submit" value="検索" />
         </form>
         <p> title: { this.state.title } </p>
         <p> URL: <a target="__blank" href={this.state.url}> { this.state.url } </a></p>
@@ -67,7 +62,5 @@ class App extends Component {
     )
   }
 }
-
-//  onClick={(keyword) => this.getQiitaPosts(keyword)} 
 
 export default App;
