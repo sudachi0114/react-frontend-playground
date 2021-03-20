@@ -7,6 +7,7 @@ class App extends Component {
 
     this.state = {
       keyword: '', // 検索したいワード
+      datas: [],
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -30,15 +31,12 @@ class App extends Component {
           "query": this.state.keyword, // this.state.query,
         }
     }).then( response => {
-      const data = response.data[0];
-      console.log(response)
+      const datas = response.data;
       this.setState({
-        title: data.title,
-        url: data.url,
+        datas: datas,
       });
-      console.log(response, "ressponse");
-      console.log(this.state.title, "title")
-      console.log(this.state.url, "url")
+      console.log("ressponse:", response);
+      console.log("datas:", this.state.datas);
     })
     .catch( err => {
         console.error(err);
@@ -56,8 +54,13 @@ class App extends Component {
           </label>
           <input type="submit" value="検索" />
         </form>
-        <p> title: { this.state.title } </p>
-        <p> URL: <a target="__blank" href={this.state.url}> { this.state.url } </a></p>
+
+        <h2> 検索結果: {this.state.keyword} </h2>
+        <ul>{ this.state.datas.map( (data) => {
+            return <li> { data.title } </li>
+        } ) }</ul>
+        {/* <p> title: { this.state.datas[0].title } </p>
+        <p> URL: <a target="__blank" href={this.state.datas[0].url}> { this.state.datas[0].url } </a></p> */}
       </div>
     )
   }
