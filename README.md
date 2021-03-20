@@ -86,6 +86,8 @@ npm を使って欲しいんだけど、そういう設定できるのかな..??
 
 ## package.json とかって git commit していいの??
 
+⬇️ ということで、むしろ「コミットしましょう」ということでした。
+
 > Git管理下では結局どのように運用すればいいの？
 > package-lock.jsonもpackage.jsonと同様にコミットしてGit管理に含める必要があります。
 
@@ -93,7 +95,6 @@ npm を使って欲しいんだけど、そういう設定できるのかな..??
 
 > なので、ファイルが巨大になってしまうnode_moduleディレクトリのみgitignoreしてgit管理から外しておいて、package.jsonとpackage-lock.jsonは両方ともコミットするようにしましょう。
 
-ということで、むしろ「コミットしましょう」ということでした。
 
 ## Links
 
@@ -101,3 +102,6 @@ npm を使って欲しいんだけど、そういう設定できるのかな..??
 * [新しい React アプリを作る](https://ja.reactjs.org/docs/create-a-new-react-app.html)
 * [package.jsonとpackage-lock.jsonの運用方法について](https://engineering.mobalab.net/2019/08/08/package-json%E3%81%A8package-lock-json%E3%81%AE%E9%81%8B%E7%94%A8%E6%96%B9%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/)
 * [フォーム - React official Document](https://ja.reactjs.org/docs/forms.html)
+
+* [React.jsでループするには。](https://qiita.com/konojunya/items/cb026a2aa3df1837d587)
+* [リストと key - React official Document](https://ja.reactjs.org/docs/lists-and-keys.html)
