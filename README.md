@@ -68,3 +68,36 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+# 自分用メモ
+
+## 新しく React アプリを作る
+
+```shell
+npx create-react-app my-app
+cd my-app
+npm start
+```
+
+ここ、yarn があると、yarn をデフォルトで使うようになってる?
+npm を使って欲しいんだけど、そういう設定できるのかな..??
+
+## package.json とかって git commit していいの??
+
+> Git管理下では結局どのように運用すればいいの？
+> package-lock.jsonもpackage.jsonと同様にコミットしてGit管理に含める必要があります。
+
+> package.jsonだけではなく、package-lock.jsonもGit管理に含めることによって先述したようにインストールされるパッケージのバージョンを固定することができ、それぞれの開発者の環境でpackage-lock.jsonに指定されたバージョンの環境をnpm installによって再現することができるからです。
+
+> なので、ファイルが巨大になってしまうnode_moduleディレクトリのみgitignoreしてgit管理から外しておいて、package.jsonとpackage-lock.jsonは両方ともコミットするようにしましょう。
+
+ということで、むしろ「コミットしましょう」ということでした。
+
+## Links
+
+* [ReactでQiitaAPIを叩いてアプリを作る入門](https://qiita.com/Kotomi1338/items/569bc88f23134d7fae73)
+* [新しい React アプリを作る](https://ja.reactjs.org/docs/create-a-new-react-app.html)
+* [package.jsonとpackage-lock.jsonの運用方法について](https://engineering.mobalab.net/2019/08/08/package-json%E3%81%A8package-lock-json%E3%81%AE%E9%81%8B%E7%94%A8%E6%96%B9%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/)
+* [フォーム - React official Document](https://ja.reactjs.org/docs/forms.html)
