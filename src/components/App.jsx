@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navbar from './Navbar'
 import QiitaService from "./QiitaService"
 
 class App extends Component {
@@ -6,6 +7,8 @@ class App extends Component {
     return (
       <div className="App">
         <div class="mx-auto" style={{width: "80%"}}>
+
+          <Navbar />
 
           <QiitaService />
 
