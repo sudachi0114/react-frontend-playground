@@ -57,10 +57,14 @@ class App extends Component {
 
         <h2> 検索結果: {this.state.keyword} </h2>
         <ul>{ this.state.datas.map( (data) => {
-            return <li> { data.title } </li>
+            return (
+              <li> 
+                <a href={data.url} >
+                { data.title } 
+                </a>
+              </li>
+            )
         } ) }</ul>
-        {/* <p> title: { this.state.datas[0].title } </p>
-        <p> URL: <a target="__blank" href={this.state.datas[0].url}> { this.state.datas[0].url } </a></p> */}
       </div>
     )
   }
