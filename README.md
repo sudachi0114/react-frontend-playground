@@ -105,3 +105,7 @@ npm を使って欲しいんだけど、そういう設定できるのかな..??
 
 * [React.jsでループするには。](https://qiita.com/konojunya/items/cb026a2aa3df1837d587)
 * [リストと key - React official Document](https://ja.reactjs.org/docs/lists-and-keys.html)
+
+* [React に bootstrap を導入 - React でカスタムページネーションを構築する方法](https://www.digitalocean.com/community/tutorials/how-to-build-custom-pagination-with-react-ja)
+* [Bootstrap 4でブロック中央寄せ](https://qiita.com/Fendo181/items/1f32cbbfa676766ae331)
+* [【React】コンポーネントにスタイルを適用する方法](https://cpoint-lab.co.jp/article/201906/10208/)
