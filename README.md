@@ -98,14 +98,24 @@ npm を使って欲しいんだけど、そういう設定できるのかな..??
 
 ## Links
 
+導入
 * [ReactでQiitaAPIを叩いてアプリを作る入門](https://qiita.com/Kotomi1338/items/569bc88f23134d7fae73)
 * [新しい React アプリを作る](https://ja.reactjs.org/docs/create-a-new-react-app.html)
 * [package.jsonとpackage-lock.jsonの運用方法について](https://engineering.mobalab.net/2019/08/08/package-json%E3%81%A8package-lock-json%E3%81%AE%E9%81%8B%E7%94%A8%E6%96%B9%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/)
+
+フォームとやりとりしたい
 * [フォーム - React official Document](https://ja.reactjs.org/docs/forms.html)
 
+リスト要素を描画したい
 * [React.jsでループするには。](https://qiita.com/konojunya/items/cb026a2aa3df1837d587)
 * [リストと key - React official Document](https://ja.reactjs.org/docs/lists-and-keys.html)
 
+bootstrap 導入
 * [React に bootstrap を導入 - React でカスタムページネーションを構築する方法](https://www.digitalocean.com/community/tutorials/how-to-build-custom-pagination-with-react-ja)
 * [Bootstrap 4でブロック中央寄せ](https://qiita.com/Fendo181/items/1f32cbbfa676766ae331)
 * [【React】コンポーネントにスタイルを適用する方法](https://cpoint-lab.co.jp/article/201906/10208/)
+
+ルーティング
+* [【React】ルーティング設定方法](https://qiita.com/k-penguin-sato/items/e46725edba00013a8300)
+* [今から始めるReact入門 〜 React Router](https://qiita.com/TsutomuNakamura/items/34a7339a05bb5fd697f2)
+* [react router v^4.0.0 Uncaught TypeError: Cannot read property 'location' of undefined](https://stackoverflow.com/questions/42892488/react-router-v4-0-0-uncaught-typeerror-cannot-read-property-location-of-unde)
