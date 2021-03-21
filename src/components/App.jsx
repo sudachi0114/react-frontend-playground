@@ -46,25 +46,30 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="app-title">Qiita API Service</h1>
-        <form onSubmit={this.getQiitaPosts}>
-          <label>
-            検索キーワード
-            <input type="text" name="検索キーワード" value={this.state.value} onChange={this.handleChange} />
-          </label>
-          <input type="submit" value="検索" />
-        </form>
+        <div class="mx-auto" style={{width: "80%"}}>
 
-        <h2> 検索結果: {this.state.keyword} </h2>
-        <ul>{ this.state.datas.map( (data) => {
-            return (
-              <li> 
-                <a href={data.url} >
-                { data.title } 
-                </a>
-              </li>
-            )
-        } ) }</ul>
+          <h1 className="app-title">Qiita API Service</h1>
+
+          <form onSubmit={this.getQiitaPosts}>
+            <label>
+              検索キーワード
+              <input type="text" name="検索キーワード" value={this.state.value} onChange={this.handleChange} />
+            </label>
+            <input type="submit" value="検索" />
+          </form>
+
+          <h2> 検索結果: {this.state.keyword} </h2>
+          <ul>{ this.state.datas.map( (data) => {
+              return (
+                <li> 
+                  <a href={data.url} >
+                  { data.title } 
+                  </a>
+                </li>
+              ) } ) }
+            </ul>
+
+        </div>
       </div>
     )
   }
