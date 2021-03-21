@@ -5,10 +5,11 @@ class Navbar extends React.Component {
   render() {
     return(
       <div>
-        (will be) Navbar
+        <Link to="/">Home</Link>
+        <Link to="/qs">QiitaService</Link>
       </div>
     )
   }
 }
 
-export default Navbar
+export default Navbar;
