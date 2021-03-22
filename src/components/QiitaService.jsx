@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 
 class QiitaService extends Component {
   constructor(props) {
@@ -59,14 +60,16 @@ class QiitaService extends Component {
 
         <h2> 検索結果: {this.state.keyword} </h2>
         <ul>{ this.state.datas.map( (data) => {
-            return (
-              <li> 
-                <a href={data.url} >
-                { data.title } 
-                </a>
-              </li>
-            ) } ) }
-          </ul>
+          return (
+            <li> 
+              <a href={data.url} >
+              { data.title } 
+              </a>
+            </li>
+          ) } ) }
+        </ul>
+
+      <Link to="/">Go Back to Home</Link>
 
       </div>
     )
