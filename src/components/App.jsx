@@ -13,7 +13,7 @@ class App extends Component {
           <Router>
             <div>
               <Navbar /> 
-              <hr />
+
               <Route exact path='/' component={Home} />
               <Route path='/qs' component={QiitaService} />
             </div>
