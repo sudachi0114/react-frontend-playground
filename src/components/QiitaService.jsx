@@ -51,17 +51,20 @@ class QiitaService extends Component {
         <h1 className="app-title">Qiita API Service</h1>
 
         <form onSubmit={this.getQiitaPosts}>
-          <label>
-            検索キーワード
-            <input type="text" name="検索キーワード" value={this.state.value} onChange={this.handleChange} />
-          </label>
-          <input type="submit" value="検索" />
+          <div class="form-group">
+            <label>
+              <input type="text" class="form-control" placeholder="検索キーワード" value={this.state.value} onChange={this.handleChange} />
+            </label>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="検索" class="btn btn-primary" />
+          </div>
         </form>
 
         <h2> 検索結果: {this.state.keyword} </h2>
-        <ul>{ this.state.datas.map( (data) => {
+        <ul class="list-group">{ this.state.datas.map( (data) => {
           return (
-            <li> 
+            <li class="list-group-item">
               <a href={data.url} >
               { data.title } 
               </a>
